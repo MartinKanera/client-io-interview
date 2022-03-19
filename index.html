@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .controlls {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+    }
+
+    #generate-grid {
+      padding: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-bottom: 2px solid black;
+      border-left: 2px solid black;
+    }
+
+    td {
+      height: 40px;
+      width: 40px;
+    }
+  </style>
+  <title>Client IO inverview</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="controlls">
+      <button id="generate-grid">Generate</button>
+      <span id="water-area"></span>
+    </div>
+    <table id="grid"></table>
+  </div>
+</body>
+</html>
